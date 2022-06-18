@@ -1,0 +1,520 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+
+.encabezado {
+   grid-area: encabezado;     
+}
+
+.header {
+   grid-area: header;
+}
+
+.nav {
+   grid-area: nav;
+}
+
+.franquicias_inicio {
+   grid-area: franquicias;     
+}
+
+.locales_inicio{
+	grid-area: locales;
+}
+
+.compra_mayor{
+	grid-area: compra_mayor;
+}
+
+.footer {
+   grid-area: footer;
+}
+
+
+#Grilla{
+	display: grid;
+	grid-template-columns: 1fr 1fr ;
+	grid-template-rows: repeat(9, auto);
+	grid-template-areas: 	
+	"encabezado encabezado"
+	"header header"
+	"nav nav"
+	"franquicias_inicio locales_inicio"
+	"compra_mayor compra_mayor"
+	"footer footer";
+}
+
+
+
+
+.encabezado__box--white {
+	background-color: white;
+	font-size: 1.8rem;
+	height: auto;
+	width: 100%;
+	text-align: center;
+	color: black;
+	 display: flex;
+   justify-content: center;
+   display: inline-block;
+ 
+}
+
+.wpp-ico {
+	display: inline-flex;
+	justify-content: center;
+	height: 40px;
+	width: 40px;
+	margin: 7.5px;
+	}
+
+
+nav	{
+	background-color: black;
+	text-align: center;
+	height: 95px;
+	width: 100%;
+
+}
+	nav ul{
+
+		list-style: none;
+
+	}
+
+	nav ul li{
+		display: inline;
+		margin: 10px 10px;
+		}
+		nav ul li a {	
+			text-decoration: none;
+			font-size: 2.3rem;
+			color: white;
+		
+		}
+
+
+.logo-rotula {
+	display: inline-flex;
+	text-decoration: none;
+	margin-top: 4px;
+}
+
+
+body {
+	background-color: #ECE9E9;
+}
+
+
+h1 {
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	font-size: 3.8rem;
+	font-family: 'Source Sans Pro', sans-serif;
+
+}
+ 
+.encabezado__img--fluid {
+	width: 100%;
+}
+
+
+
+h2 {
+	color: black;
+	font-size: 2.9rem;
+}
+
+h3 {
+	font-size: 2.5rem;
+} 
+
+main section article a h2{
+	text-align: center;
+}
+
+
+main  p {
+
+	font-size: 2rem;
+} 
+
+footer {
+	background-color: black;
+	color: white;
+	font-size: 1.8rem;
+	height: auto;
+	}
+
+	footer a {
+		display: inline-flex;
+	}
+
+
+	footer li a{
+		list-style: none;
+		text-decoration: none;
+		font-size: 1.6rem;
+		color: white;
+		background-color: black;
+		text-align: center;
+
+	}
+
+
+
+.seguinos {
+
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	column-gap: 20px;
+	row-gap: 20px; 
+	margin-top: 20px;
+	margin-bottom: 20px;
+}	
+
+
+footer article li a {
+	text-align: center;
+}
+
+.contenido-foot {
+	text-align: center;
+	font-size: 2rem;
+}
+
+
+.instagram-icono {
+ height:35px;
+ width: 35px;
+
+}
+
+.facebook-icono {
+ height:35px;
+ width: 35px;
+
+}
+
+.formulario-newsletter {
+ display: inline-flex;
+ text-align: left;	
+padding-left: 5%;
+width: 44%;
+}
+
+
+.indice-pie {
+ display: inline-flex;
+ justify-content: right;
+ flex-direction: column;
+ text-align: center;
+list-style: none;
+width: 49%;
+
+}
+
+
+.pie {
+	text-align:center;
+
+
+}
+
+.bg-black {
+	background-color: black;
+}
+
+.derechos{
+	display: inline;
+	text-align: center;
+	
+}
+
+/* INICIO PAGINA INDICE */
+
+.indice-franquicias{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   margin: 1.25% 1.25%;
+}
+
+.compra_mayor{
+	text-align: center;
+	margin: 2em 2%;
+   justify-content: center;
+
+}
+
+.locales-icono {
+	 height:20em;
+	 width: 20em;
+}
+.franquicias-icono {
+	 height: 20em;
+	 width: 20em;
+}
+
+
+ /*FIN PAGINA INDICE*/
+
+
+
+/* INICIO PAGINA NOSOTROS */
+
+.nosotros_titulo{
+	text-align: center;
+	margin: 1em ;
+
+}
+
+.nosotros{
+	margin: 0 2%;
+	width: auto;
+	text-align: center;
+}
+/* FIN PAGINA NOSOTROS */
+
+
+/* INICIO PAGINA LOCALES */
+
+
+
+
+section#encabezado {
+   grid-area: encabezado;     
+}
+
+
+nav {
+   grid-area: nav;
+}
+
+.franquicias_inicio {
+   grid-area: franquicias;     
+}
+
+.locales.inicio{
+	grid-area: locales;
+}
+
+.locales{
+	grid-area: locales;
+}
+
+.rotula_flores{
+	grid-area: rotula_flores;
+}
+.rotula_formosa{
+	grid-area: rotula_formosa;
+}
+.pie {
+   grid-area: footer;
+}
+
+#Grillalocales{
+	display: grid;
+	grid-template-areas: 	
+	"encabezado encabezado"
+	"nav nav"
+	"locales locales"
+	"rotula_flores rotula_formosa"
+	"footer footer";
+}
+
+@media screen and (min-width: 360px) {
+	#grilla {
+            grid-template-columns:  1fr 1fr;
+    			grid-template-rows: repeat(6fr);
+    				grid-template-areas: 	
+	"encabezado encabezado"
+	"nav nav "
+	"locales locales"
+	"rotula_flores rotula_flores"
+	"rotula_formosa rotula_formosa"
+	"footer footer";
+}
+}
+
+.locales_titulo{
+	text-align: center;
+	margin: 1em ;
+
+}
+
+.locales{
+	margin: 0 2%;
+	width: auto;
+	text-align: center;
+}
+
+.locales_rotula{
+	display: inline-block;
+	margin: 2em 0 ;
+
+}
+
+.icono_instagram_locales {
+	 height: 13%;
+	 width: 13%;
+}
+
+.icono_facbook_locales{
+	 height: 13%;
+	 width: 13%;
+
+}
+.rotula_flores{
+	display: inline-block;
+	text-align: center;
+	margin: 1.25% 1.25%;
+	width: 47%;
+}
+
+.rotula_formosa{
+	display: inline-block;
+	text-align: center;
+	margin: 1.25% 1.25%;
+	width: 47%;
+}
+
+/*  FIN PAGINA LOCALES */
+
+
+/*INICIO PAGINA FRANQUICIAS*/
+.franquicias_titulo {
+	text-align: center;
+	padding: 1em 0 ;
+}
+
+.presentacion_franquicias	{
+	height: auto;
+	text-align: center;
+	margin:0 2%;
+}
+
+
+.comunicacion{
+	width: 47%;
+	height: auto;
+	color: black;
+	display: inline-block;
+	text-align: center;
+	margin: 1.25% 1.25%;
+}
+
+.comunicacion-icono {
+	 height: 10%;
+	 width: 10%;
+}
+
+.newsletter{
+	width: 47%;
+	height: auto;
+	color: black;
+	display: inline-block;
+	text-align: center;
+	margin: 1.25% 1.25%;
+}
+
+
+.newsletter-icono {
+	 height: 10%;
+	 width: 10%;
+}
+
+.consejos{
+	width: 47%;
+	height: auto;
+	color: black;
+	display: inline-block;
+	text-align: center;
+	margin: 1.25% 1.25%;
+}
+
+.consejos-icono {
+	 height: 10%;
+	 width: 10%;
+}
+
+.stock{
+	width: 47%;
+	height: auto;
+	color: black;
+	display: inline-block;
+	text-align: center;
+	margin: 1.25% 1.25%;
+}
+
+.stock-icono {
+	 height: 10%;
+	 width: 10%;
+}
+
+
+.formulario-informacion {
+	text-align: center;
+	font-size: 2em;
+	height: auto;
+	width: 25%;
+	margin: 5em 37.5% 0 37.5% ;
+
+	}
+
+/*  FIN PAGINA FRANQUICIAS*/
+
+
+
+/* INICIO PAGINA COMPRA MAYORISTA*/
+
+.titulo_compra_mayor {
+	text-align: center;
+	padding: 1em 0 ;
+}
+
+.presentacion_compra_mayor	{
+	height: auto;
+	text-align: center;
+	margin: 0 2%;
+}
+
+
+/* FIN COMPRA MAYORISTA*/
+
+
+
+/* INICIO PAGINA CONTACTO */
+
+.contacto_titulo {
+	text-align: center;
+	padding: 1em ;
+}
+
+
+.formulario-contacto{
+	text-align: center;
+	font-size: 2em;
+	height: auto;
+	width: 25%;
+	margin: 2em 37.5% 0 37.5% ;
+
+	}
+
+
+/* FIN PAGINA CONTACTO */
+
+
+
+
+
+
